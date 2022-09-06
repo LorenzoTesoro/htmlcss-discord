@@ -8,7 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 :root{
-    --brand: #255EE9;
+    --brand: #7289DA;
     --greyple: #99aab5;
     --dark: #2c2f33;
     --focus-border: #00b0f4;
@@ -54,8 +54,7 @@ body{
 }
 
 section{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+   margin-top: 15rem;
 }
 
 h1{
@@ -63,9 +62,6 @@ h1{
     color: white;
     padding-top:2.3rem;
     padding-bottom: 2rem;
-}
-section{
-    margin-top:4rem;
 }
 section img{
     width:100%;
@@ -83,15 +79,24 @@ section .col-4{
 h2+p{
     line-height: 1.5;
     color:#282020;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
 }
+
+button{
+    margin-top:1rem;
+    padding:1rem 2rem;
+    border-radius: 40px;
+    border:none;
+}
+
 /*#endregion common rules */
 
 /* #region header */
 
 
 header{
-    background-color: var(--brand);
+    background-color:#255EE9;
     padding-top:1rem;
     padding-bottom:1rem;
 }
@@ -128,6 +133,7 @@ header button{
     background-image: url('../img/jumbo.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 0;
 }
 .page_description_content{
     width:60%;
@@ -142,17 +148,11 @@ header button{
     font-size: 1.3rem;
 }
 
-.page_description_content button{
-    margin-top:1rem;
-    padding:1rem 2rem;
-    border-radius: 40px;
-    border:none;
-}
-
 .mac_button{
     margin-right:1rem;
     color: var(--dark);
     font-weight: bold;
+    font-size:1rem;
 }
 .mac_button i{
     font-weight: bold;
@@ -161,25 +161,40 @@ header button{
 .browser_link{
     background-color:var(--not-quite-black);
     color: var(--off-white);
+    font-size:1rem;
+}
+/* invite_only */
+.invite_only{
+    margin-top: 6rem;
+}
+/* download */
+.download .container{
+    text-align: center;
+}
+div.stars{
+    width:50%;
+    margin:0 auto;
+    position:relative;
+}
+.stars img{
+    position:absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+}
+.stars h3{
+    padding-top:2rem;
+    font-size:1.5rem;
+}
+.download button{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    color:var(--off-white);
+    background-color: var(--brand);
+    font-size:1rem;
 }
 
-/* invite_only_section */
-section.invite_only{
-    margin-top:4rem;
-}
-
-/* easy_find */
-
-section.easy_find{
-    margin-top:4rem;
-}
-
-.download > .container{
-    height: 200px;
-    width:80%;
-    background-color: rosybrown;
-    border:1px solid black;
-}
+/* #endregion main */
 
 /* footer */
 
