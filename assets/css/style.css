@@ -10,16 +10,16 @@ body{
 :root{
     --brand: #255EE9;
     --greyple: #99aab5;
-    --dark-not-black: #2c2f33;
+    --dark: #2c2f33;
     --focus-border: #00b0f4;
     --status-green: #43b581;
     --text-link: #00b0f4;
     --off-white: #f6f6f6;
     --white: #fff;
-    --not-quite-black: #23272a;
+    --not-quite-black: #282020;
 }
 .container{
-    width: 80%;
+    width: 70%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -130,7 +130,8 @@ header button{
 
 .mac_button{
     margin-right:1rem;
-    color: var(--not-quite-black);
+    color: var(--dark);
+    font-weight: bold;
 }
 .mac_button i{
     font-weight: bold;
@@ -141,10 +142,31 @@ header button{
     color: var(--off-white);
 }
 
-/* page_description_content */
-section:nth-child(3), section:nth-child(5)
-{background-color: green;
+/* invite_only_section */
+section.invite_only{
+    margin-top:4rem;
 }
+.invite_only .col-4 {
+    padding-top:1.75rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.invite_only h2{
+    line-height: 2;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+h2+p{
+    line-height: 1.5;
+    color:#282020;
+}
+
+
+/* easy_find */
+
+
+
 
 .download > .container{
     height: 200px;
