@@ -90,6 +90,9 @@ button{
     border:none;
 }
 
+.brand{
+    color:var(--brand);
+}
 /*#endregion common rules */
 
 /* #region header */
@@ -196,28 +199,45 @@ div.stars{
 
 /* #endregion main */
 
-/* footer */
-
+/* #region footer */
 footer{
-    background-color: violet;
+    padding-top:4rem;
+    background-color: var(--dark);
 }
-footer .row{
-    height:100px;
-    border:1px solid black;
+footer h4{
+    font-size:1.5rem;
+    padding-right:1rem;
+    line-height: 1.5;
 }
-
-.container.logo{
-    background-color: darksalmon;
-}
-
-.row .logo, .row .button{
-    height:50%;
-    width:10%;
-    background-color: blue;
-    border: 1px solid black;
+h4, footer .col-3 > div:first-child{
+    color:var(--brand);
 }
 
+footer .col-3 div{
+    padding-bottom:0.95rem;
+    color:var(--off-white)
+}
+#national_flag{
+    height: 15px;
+}
+span{
+    vertical-align: center;
+}
+
+#languages_option, #social_icons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+#social_icons i{
+    padding-right:1rem;
+}
+.footer_top{
+    padding-right:0.50rem;
+}
 .row.company{
     align-content: center;
     justify-content: space-between;
 }
+
+/* #endregion footer */
